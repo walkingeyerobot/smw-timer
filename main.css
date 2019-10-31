@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Kartika";
+    src: url("./Kartika.ttf");
+}
+
+html,body {
+    background: magenta;
+    color: white;
+    font-family: "Kartika";
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#wrap {
+    height: 810px;
+    overflow: hidden;
+    margin: 50px 50px 0 50px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#title, #name {
+    font-size: 138px;
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 1185px;
+}
+
+#name {
+    text-align: center;
+}
+
+#splits, #totals, #wrap {
+    width: 1185px;
+}
+
+#splits {
+    position: relative;
+}
+
+#totals {
+    margin: 0 50px;
+}
+
+#totals > .split {
+    border-top: 3px solid white;
+}
+
+.split {
+    font-size: 0;
+    height: 81px;
+}
+
+.split > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name {
+    font-size: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 600px;
+    white-space: nowrap;
+}
+
+.time {
+    font-size: 69px;
+    text-align: right;
+    width: 420px;
+}
+
+.death {
+    font-size: 69px;
+    text-align: right;
+    width: 165px;
+}
+
+.time, .death {
+    font-family: monospace;
+}
+
+.currentSplit {
+    color: #FFD94C;
+}
